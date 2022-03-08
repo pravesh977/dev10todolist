@@ -6,13 +6,22 @@
 .todoMainForm {
     width: 60%;
     margin: 0 auto;
-    margin-top: 10vh;
-    position: relative;
+    margin-top: 5vh;
+    /* position: relative; */
     margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
 }
 
 #toDoButton {
-    position: absolute;
+    /* position: absolute;
     bottom: 20;
-    right: 0;
+    right: 0; */
+    align-self: end;
+}
+
+#todoDiv {
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
 }

@@ -16,24 +16,18 @@
     />
   </head>
   <body>
-
-    <div class="row">
-        <div class="col-sm">col-sm</div>
-        <div class="col-sm">col-sm</div>
-        <div class="col-sm">col-sm</div>
-      </div>
     
-    <form class="todoMainForm">
+    <form class="todoMainForm" onsubmit="return false">
         <h2 class ="mainTitle">Todo List</h2>
         <div class="form-group">
           <label for="taskTitle">Task</label>
-          <input type="text" class="form-control" id="taskTitle" placeholder="Task Name">
+          <input type="text" class="form-control" id="taskTitle" placeholder="Task Name" onchange="this.setCustomValidity('')">
         </div>
         <div class="form-group">
           <label for="deadLineDate">Deadline Date</label>
-          <input type="date" class="form-control" id="deadLineDate">
+          <input type="date" class="form-control" id="deadLineDate" onchange="this.setCustomValidity('')">
         </div>
-        <button id="toDoButton" type="button" class="btn btn-primary" onclick="addTaskClicked()">Submit</button>
+        <button id="toDoButton" type="submit" class="btn btn-primary" onclick="addTaskClicked()">Submit</button>
       </form>
       <div class="container">
         <div id="todoDiv" class="row"></div>
